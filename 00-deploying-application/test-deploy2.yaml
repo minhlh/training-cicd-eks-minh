@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       nodeSelector:
-        eks.amazonaws.com/compute-type: hybrid
+        NodeGroupType: SparkComputeOptimized
       containers:
         - name: nginx
           image: public.ecr.aws/nginx/nginx:1.26
